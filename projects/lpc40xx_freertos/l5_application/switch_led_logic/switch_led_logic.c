@@ -7,8 +7,8 @@ static gpio_s my_led;
 static gpio_s my_switch;
 
 void switch_led_logic__initialize(void) {
-  my_led = gpio__construct_as_output(GPIO__PORT_2, 0);
-  my_switch = gpio__construct_as_input(GPIO__PORT_2, 1);
+  my_led = board_io__get_led0();
+  my_switch = board_io__get_sw0();
 }
 
 void switch_led_logic__run_once(void) {

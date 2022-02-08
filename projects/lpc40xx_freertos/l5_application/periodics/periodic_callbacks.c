@@ -5,6 +5,9 @@
 
 #include "switch_led_logic.h"
 
+#include "FreeRTOS.h"
+#include "task.h"
+
 /******************************************************************************
  * Your board will reset if the periodic function does not return within its deadline
  * For 1Hz, the function must return within 1000ms
