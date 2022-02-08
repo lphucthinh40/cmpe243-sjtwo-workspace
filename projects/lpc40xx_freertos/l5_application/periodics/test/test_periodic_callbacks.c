@@ -13,6 +13,9 @@
 #include "Mockswitch_led_logic.h"
 #include "periodic_callbacks.h"
 
+#include "FreeRTOS.h"
+#include "task.h"
+
 void setUp(void) {}
 
 void tearDown(void) {}
